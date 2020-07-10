@@ -1,0 +1,34 @@
+$color-1: #4a8fc2;
+$color-2: #963982;
+$color-3: #dd4039;
+$color-4: #ee7d2d;
+$color-5: #f5b12a;
+$color-6: #65ae3d;
+
+body{
+    font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+    font-size: 1.5rem;
+
+}
+
+h2::before {
+    content: '';
+    display: block;
+    height: 100px;
+    margin-top: -100px;
+    width: 1px;
+    pointer-events: none;
+}
+
+section{
+    padding: 50px 0;
+    &.highlight-1{
+        background-color: darken($color: $color-1, $amount: 20%);
+        color: white;   
+    }
+
+    &.highlight-2{
+        background-color: darken($color: $color-2, $amount: 10%);
+        color: white;
+    }
+}
