@@ -5,10 +5,10 @@ $color-4: #ee7d2d;
 $color-5: #f5b12a;
 $color-6: #65ae3d;
 
-body{
+body {
     font-family: "Fira Sans", Helvetica, Arial, sans-serif;
-    font-size: 1.5rem;
-
+    font-size: 1.2rem;
+    line-height: 1.6;
 }
 
 h2::before {
@@ -20,15 +20,29 @@ h2::before {
     pointer-events: none;
 }
 
-section{
-    padding: 50px 0;
-    &.highlight-1{
-        background-color: darken($color: $color-1, $amount: 20%);
-        color: white;   
+section {
+    padding: 60px 0;
+
+    &.highlight-1 {
+        background-color: darken($color: $color-1, $amount: 10%);
+        color: white;
     }
 
-    &.highlight-2{
+    &.highlight-2 {
         background-color: darken($color: $color-2, $amount: 10%);
         color: white;
     }
+}
+
+p {
+    font-weight: 300;
+
+    &.lead {
+        font-weight: 400;
+        font-size: 1.1em;
+    }
+}
+
+strong {
+    font-weight: 600;
 }
