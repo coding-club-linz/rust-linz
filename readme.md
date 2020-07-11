@@ -1,3 +1,5 @@
+![CI/CD Workflow for Rust Linz Meetup Website](https://github.com/coding-club-linz/rust-linz/workflows/CI/CD%20Workflow%20for%20Rust%20Linz%20Meetup%20Website/badge.svg)
+
 # Rust Meetup Linz
 
 ## Introduction
