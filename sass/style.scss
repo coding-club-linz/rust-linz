@@ -5,62 +5,20 @@ $color-4: #ee7d2d;
 $color-5: #f5b12a;
 $color-6: #65ae3d;
 
+/* common styles*/
 body {
+    padding-top: 60px;
     font-family: "Fira Sans", Helvetica, Arial, sans-serif;
     font-size: 1.2rem;
     line-height: 1.6;
 }
 
-h2::before {
-    content: '';
-    display: block;
-    height: 100px;
-    margin-top: -100px;
-    width: 1px;
-    pointer-events: none;
+h2 {
+    margin-block-end: 1.5rem;
 }
 
-header{
-    padding: 40px 0;
-}
-
-section {
-    padding: 60px 0;
-
-    h2{
-        z-index: 1;
-        position: relative;
-        display: inline-block;
-    }
-    
-    h2::after{
-        content:'';
-        background-color: $color-5;
-        height: 24px;
-        position: absolute;
-        left: -10px;   
-        width:calc(100% + 20px);
-        line-height: 1.6;
-        bottom: 0;
-        z-index: -1;
-        
-    }
-    
-    &.highlight-1 {
-        background-color: darken($color: $color-1, $amount: 10%);
-        color: white;
-        h2::after{
-            background-color: $color-2;
-        }
-    }
-    
-    &.highlight-2 {
-        background-color: darken($color: $color-2, $amount: 10%);
-        color: white;
-        h2::after{
-            background-color: $color-6;
-        }
-    }
+h3 {
+    margin-block-end: 1.5rem;
 }
 
 p {
@@ -76,50 +34,103 @@ strong {
     font-weight: 600;
 }
 
-.page-title{
-  font-family: "Alfa Slab One", serif;
-    display: flex;
+/* header */
+header {
+    padding: 40px 0;
 
-    &>div{
-        margin: auto;
+    .page-title {
+        font-family: "Alfa Slab One", serif;
+        display: flex;
+
+        &>div {
+            margin: auto;
+        }
+    }
+
+    .title-img {
+        width: 100%;
+    }
+
+    .page-title-text {
+        font-size: 3.5rem;
+
+        @media screen and (max-width: 576px) {
+            font-size: 2.7rem;
+        }
+    }
+
+    .title-img-container {
+        &>div {
+            margin: auto;
+        }
+
+        display: flex;
     }
 }
 
-.title-img{
-    width: 100%;
-}
+/* section */
+section {
+    padding: 60px 0;
 
-.page-title-text{
-    font-size: 3.5rem;
-    @media screen and (max-width: 576px)
-    {
-        font-size: 2.7rem;
+    &::before {
+        content: '';
+        display: block;
+        height: 120px;
+        margin-top: -120px;
+        width: 1px;
+        pointer-events: none;
+    }
+
+    h2 {
+        z-index: 1;
+        position: relative;
+        display: inline-block;
+    }
+
+    h2::before {
+        content: '';
+        background-color: $color-5;
+        height: 0.5em;
+        position: absolute;
+        left: -10px;
+        width: calc(100% + 20px);
+        line-height: 1.6;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    &.highlight-1 {
+        background-color: darken($color: $color-1, $amount: 10%);
+        color: white;
+
+        h2::before {
+            background-color: $color-2;
+        }
+    }
+
+    &.highlight-2 {
+        background-color: darken($color: $color-2, $amount: 10%);
+        color: white;
+
+        h2::before {
+            background-color: $color-6;
+        }
     }
 }
 
-body{
-    padding-top: 60px;
-}
-
-.title-img-container{
-    &>div{
-        margin: auto;
-    }
-    display: flex;
-}
-
+/* footer */
 footer {
     padding: 60px 0;
-}
-.icon {
-    padding: 0 10px;
-    font-size: 40px;
-}
-footer {
     background-color: #222;
     color: white;
+
     a {
         color: white;
         text-decoration: underline;
-    }   
+    }
+
+    .icon {
+        padding: 0 10px;
+        font-size: 40px;
+    }
 }
