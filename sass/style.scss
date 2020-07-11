@@ -79,5 +79,18 @@ body{
     display: flex;
 }
 
-
-
+footer {
+    padding: 60px 0;
+}
+.icon {
+    padding: 0 10px;
+    font-size: 40px;
+}
+footer {
+    background-color: #222;
+    color: white;
+    a {
+        color: white;
+        text-decoration: underline;
+    }   
+}
