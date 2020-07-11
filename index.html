@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- FAVICON -->
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
@@ -16,8 +15,7 @@
     <meta name="msapplication-config" content="/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
     <!-- FAVICON -->
-
-    <title>Rust Linz Meetup</title>
+    <title>Rust Meetup Linz</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -25,36 +23,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
 </head>
 
-<body>   
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <strongutton class="navbar-toggler" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </strongutton>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#intro">Intro</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#events">Events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#participation">Participation</a>
-                    </li>
-                </ul>
-            </div>
-        </nav> 
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="img/rust-linz-logo.svg" alt="Rust Linz" width="23" height="23">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#intro">Intro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#events">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#participation">Participation</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <header>
         <div class="container">
             <div class="row">
                 <div class="col-sm-8 page-title text-center">
-                    <div>                       
+                    <div>
                         <h1 class="page-title-text mb-3 mb-sm-0">Rust Meetup Linz</h1>
                         <h2 class="page-subtitle mb-5 mb-sm-0">It's time for the steel city to Rust!</h2>
                     </div>
@@ -67,60 +66,48 @@
             </div>
         </div>
     </header>
-    <section class="highlight-1">
+    <section id="intro" class="highlight-1">
         <div class="container">
             <div class="row">
                 <div class="col-sm">
-                    <h2 id="intro">Intro</h2>
-                    <p class="lead">In the last years, Rust has become a popular programming language. Many use it, even
-                        more are eager to learn it. Linz has meetups for
-                        many programming languages, but Rust has been missing - and that is about to change.</p>
-                    <p class="text-center"><strong>We are thrilled to announce the launch of a Rust meetup in
-                            Linz.</strong></p>
-                    <p>The goal is to bring together people who are using Rust or who are curious and want to learn
-                        about it. We invite everybody to contribute
-                        short talks about the Rust programming language or related technologies. It might be an
-                        interesting feature you discovered, a project
-                        you have been working on, a finding of yours from a real-world project, a Rust-related book that
-                        you want others to know about, anything
-                        that you want to contribute to the local Rust community is welcome. Before and after the talks
-                        there will be time for informal chatting.
+                    <h2>Intro</h2>
+                    <p class="lead">In the last years, Rust has become a popular programming language. Many use it, even more are eager to learn it. Linz has
+                        meetups for many programming languages, but Rust has been missing - and that is about to change.</p>
+                    <p class="text-center"><strong>We are thrilled to announce the launch of a Rust meetup in Linz.</strong></p>
+                    <p>The goal is to bring together people who are using Rust or who are curious and want to learn about it. We invite everybody to contribute
+                        short talks about the Rust programming language or related technologies. It might be an interesting feature you discovered, a project
+                        you have been working on, a finding of yours from a real-world project, a Rust-related book that you want others to know about, anything
+                        that you want to contribute to the local Rust community is welcome. Before and after the talks there will be time for informal chatting.
                     </p>
-                    <p>Because of the current Covid-19 situation, the <strong>Rust meetup Linz will happen online in the
-                            foreseeable future</strong>. On the long run,
-                        in-person meetups with streaming of the delivered talks are planned.</p>
+                    <p>Because of the current Covid-19 situation, the <strong>Rust meetup Linz will happen online in the foreseeable future</strong>. On the
+                        long run, in-person meetups with streaming of the delivered talks are planned.</p>
                 </div>
             </div>
         </div>
     </section>
-    <section>
+    <section id="events">
         <div class="container">
             <div class="row">
                 <div class="col-sm">
-                    <h2 id="events">Events</h2> 6.8. Speaker Ryan Levick
-                    https://www.youtube.com/channel/UCpeX4D-ArTrsqvhLapAHprQ 17.9. Roland Ruckerbauer?
-                    https://github.com/ruabmbua Meaghan Lewis? https://github.com/meaghanlewis 8.10.
+                    <h2>Events</h2>
+                    <p>6.8. Speaker Ryan Levick https://www.youtube.com/channel/UCpeX4D-ArTrsqvhLapAHprQ 17.9. Roland Ruckerbauer? https://github.com/ruabmbua
+                        Meaghan Lewis? https://github.com/meaghanlewis 8.10.</p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="highlight-2">
+    <section id="participation" class="highlight-2">
         <div class="container">
             <div class="row">
                 <div class="col-sm">
-                    <h2 id="participation">Participation</h2>
-                    <p class="lead">Do you want to deliver a talk at the *Rust* meetup Linz? Great! [Please enter your
-                        suggested topic in
+                    <h2>Participation</h2>
+                    <p class="lead">Do you want to deliver a talk at the *Rust* meetup Linz? Great! [Please enter your suggested topic in
                         Sessionize.](https://sessionize.com/rust-linz/)</p>
-                    <p>If possible, talks should be delivered in English. If you are not comfortable speaking English,
-                        German is an option, too. *Rust* is still
-                        a rather young language. Thus, not many people consider themselves as *Rust* experts. Because of
-                        this, we are not just looking for deep
-                        dive content. Introductory sessions are great, too, so that beginners, students, and hobbyists
-                        have the opportunity to start their
-                        *Rust* journey. <strong>You do not need to be a Rust pro to talk at our meetup!</strong> If you
-                        have something Rust-related to share that you are
-                        passionate about, we would love to have you as a speaker.</p>
+                    <p>If possible, talks should be delivered in English. If you are not comfortable speaking English, German is an option, too. *Rust* is still
+                        a rather young language. Thus, not many people consider themselves as *Rust* experts. Because of this, we are not just looking for deep
+                        dive content. Introductory sessions are great, too, so that beginners, students, and hobbyists have the opportunity to start their
+                        *Rust* journey. <strong>You do not need to be a Rust pro to talk at our meetup!</strong> If you have something Rust-related to share
+                        that you are passionate about, we would love to have you as a speaker.</p>
                 </div>
             </div>
         </div>
@@ -130,37 +117,30 @@
             <div class="row">
                 <div class="col-md-4 col-xl-3">
                     <h3>Organizer</h3>
-                    <p>Coding Club Linz<br>
-                        Birkenweg 16<br>
-                        4060 Leonding<br>
+                    <p>Coding Club Linz<br> Birkenweg 16<br> 4060 Leonding<br>
                         <a href="mailto:info@rust-linz.at">info@rust-linz.at</a></p>
                 </div>
                 <div class="col-md-4 col-xl-6">
                     <h3>Code Of Conduct</h3>
-                    <p>The Rust Meetup Linz uses the <a href="https://berlincodeofconduct.org/">Berlin Code of
-                        Conduct</a>. Our primary goal is to be inclusive to the
-                        largest number of contributors, with the most varied and diverse backgrounds possible.</p>
+                    <p>The Rust Meetup Linz uses the <a href="https://berlincodeofconduct.org/">Berlin Code of Conduct</a>. Our primary goal is to be inclusive
+                        to the largest number of contributors, with the most varied and diverse backgrounds possible.</p>
                 </div>
                 <div class="col-md-4 col-xl-3">
                     <h3>Social</h3>
                     <p><a href="https://twitter.com/rustlinz"><i class="fab fa-twitter icon"></i></a>
-                       <a href="https://www.meetup.com/de-DE/Rust-Linz/"><i class="fab fa-meetup icon"></i></a>
-                       <a href="https://discord.gg/T27Ms2f"><i class="fab fa-discord icon"></i></a></p>
+                        <a href="https://www.meetup.com/de-DE/Rust-Linz/"><i class="fab fa-meetup icon"></i></a>
+                        <a href="https://discord.gg/T27Ms2f"><i class="fab fa-discord icon"></i></a></p>
                 </div>
             </div>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/d9ebd98690.js" crossorigin="anonymous"></script>
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d9ebd98690.js" crossorigin="anonymous"></script>
 </body>
-
 
 </html>

@@ -1,45 +1,15 @@
+/* common styles*/
 body {
+  padding-top: 60px;
   font-family: "Fira Sans", Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
   line-height: 1.6; }
 
-h2::before {
-  content: '';
-  display: block;
-  height: 100px;
-  margin-top: -100px;
-  width: 1px;
-  pointer-events: none; }
+h2 {
+  margin-block-end: 1.5rem; }
 
-header {
-  padding: 40px 0; }
-
-section {
-  padding: 60px 0; }
-  section h2 {
-    z-index: 1;
-    position: relative;
-    display: inline-block; }
-  section h2::after {
-    content: '';
-    background-color: #f5b12a;
-    height: 24px;
-    position: absolute;
-    left: -10px;
-    width: calc(100% + 20px);
-    line-height: 1.6;
-    bottom: 0;
-    z-index: -1; }
-  section.highlight-1 {
-    background-color: #3775a2;
-    color: white; }
-    section.highlight-1 h2::after {
-      background-color: #963982; }
-  section.highlight-2 {
-    background-color: #712b62;
-    color: white; }
-    section.highlight-2 h2::after {
-      background-color: #65ae3d; }
+h3 {
+  margin-block-end: 1.5rem; }
 
 p {
   font-weight: 300; }
@@ -50,39 +20,69 @@ p {
 strong {
   font-weight: 600; }
 
-.page-title {
-  font-family: "Alfa Slab One", serif;
-  display: flex; }
-  .page-title > div {
-    margin: auto; }
+/* header */
+header {
+  padding: 40px 0; }
+  header .page-title {
+    font-family: "Alfa Slab One", serif;
+    display: flex; }
+    header .page-title > div {
+      margin: auto; }
+  header .title-img {
+    width: 100%; }
+  header .page-title-text {
+    font-size: 3.5rem; }
+    @media screen and (max-width: 576px) {
+      header .page-title-text {
+        font-size: 2.7rem; } }
+  header .title-img-container {
+    display: flex; }
+    header .title-img-container > div {
+      margin: auto; }
 
-.title-img {
-  width: 100%; }
-
-.page-title-text {
-  font-size: 3.5rem; }
-  @media screen and (max-width: 576px) {
-    .page-title-text {
-      font-size: 2.7rem; } }
-
-body {
-  padding-top: 60px; }
-
-.title-img-container {
-  display: flex; }
-  .title-img-container > div {
-    margin: auto; }
-
-footer {
+/* section */
+section {
   padding: 60px 0; }
+  section::before {
+    content: '';
+    display: block;
+    height: 120px;
+    margin-top: -120px;
+    width: 1px;
+    pointer-events: none; }
+  section h2 {
+    z-index: 1;
+    position: relative;
+    display: inline-block; }
+  section h2::before {
+    content: '';
+    background-color: #f5b12a;
+    height: 0.5em;
+    position: absolute;
+    left: -10px;
+    width: calc(100% + 20px);
+    line-height: 1.6;
+    bottom: 0;
+    z-index: -1; }
+  section.highlight-1 {
+    background-color: #3775a2;
+    color: white; }
+    section.highlight-1 h2::before {
+      background-color: #963982; }
+  section.highlight-2 {
+    background-color: #712b62;
+    color: white; }
+    section.highlight-2 h2::before {
+      background-color: #65ae3d; }
 
-.icon {
-  padding: 0 10px;
-  font-size: 40px; }
-
+/* footer */
 footer {
+  padding: 60px 0;
   background-color: #222;
   color: white; }
   footer a {
     color: white;
     text-decoration: underline; }
+  footer .icon {
+    padding: 0 10px;
+    font-size: 40px; }
