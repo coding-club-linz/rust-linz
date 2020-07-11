@@ -20,17 +20,46 @@ h2::before {
     pointer-events: none;
 }
 
+header{
+    padding: 40px 0;
+}
+
 section {
     padding: 60px 0;
 
+    h2{
+        z-index: 1;
+        position: relative;
+        display: inline-block;
+    }
+    
+    h2::after{
+        content:'';
+        background-color: $color-5;
+        height: 24px;
+        position: absolute;
+        left: -10px;   
+        width:calc(100% + 20px);
+        line-height: 1.6;
+        bottom: 0;
+        z-index: -1;
+        
+    }
+    
     &.highlight-1 {
         background-color: darken($color: $color-1, $amount: 10%);
         color: white;
+        h2::after{
+            background-color: $color-2;
+        }
     }
-
+    
     &.highlight-2 {
         background-color: darken($color: $color-2, $amount: 10%);
         color: white;
+        h2::after{
+            background-color: $color-6;
+        }
     }
 }
 
@@ -78,6 +107,7 @@ body{
     }
     display: flex;
 }
+
 
 
 
