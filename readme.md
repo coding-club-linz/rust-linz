@@ -3,6 +3,7 @@
 ## Introduction
 
 This is the repository for the website of the Rust meetup Linz.
+Read more at: https://rust-linz.at
 
 ## Links
 
