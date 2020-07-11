@@ -1,0 +1,88 @@
+body {
+  font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.6; }
+
+h2::before {
+  content: '';
+  display: block;
+  height: 100px;
+  margin-top: -100px;
+  width: 1px;
+  pointer-events: none; }
+
+header {
+  padding: 40px 0; }
+
+section {
+  padding: 60px 0; }
+  section h2 {
+    z-index: 1;
+    position: relative;
+    display: inline-block; }
+  section h2::after {
+    content: '';
+    background-color: #f5b12a;
+    height: 24px;
+    position: absolute;
+    left: -10px;
+    width: calc(100% + 20px);
+    line-height: 1.6;
+    bottom: 0;
+    z-index: -1; }
+  section.highlight-1 {
+    background-color: #3775a2;
+    color: white; }
+    section.highlight-1 h2::after {
+      background-color: #963982; }
+  section.highlight-2 {
+    background-color: #712b62;
+    color: white; }
+    section.highlight-2 h2::after {
+      background-color: #65ae3d; }
+
+p {
+  font-weight: 300; }
+  p.lead {
+    font-weight: 400;
+    font-size: 1.1em; }
+
+strong {
+  font-weight: 600; }
+
+.page-title {
+  font-family: "Alfa Slab One", serif;
+  display: flex; }
+  .page-title > div {
+    margin: auto; }
+
+.title-img {
+  width: 100%; }
+
+.page-title-text {
+  font-size: 3.5rem; }
+  @media screen and (max-width: 576px) {
+    .page-title-text {
+      font-size: 2.7rem; } }
+
+body {
+  padding-top: 60px; }
+
+.title-img-container {
+  display: flex; }
+  .title-img-container > div {
+    margin: auto; }
+
+footer {
+  padding: 60px 0; }
+
+.icon {
+  padding: 0 10px;
+  font-size: 40px; }
+
+footer {
+  background-color: #222;
+  color: white; }
+  footer a {
+    color: white;
+    text-decoration: underline; }
