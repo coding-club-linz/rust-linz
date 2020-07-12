@@ -5,6 +5,8 @@ $color-4: #ee7d2d;
 $color-5: #f5b12a;
 $color-6: #65ae3d;
 
+$color-dark: #222;
+
 /* common styles*/
 body {
     padding-top: 60px;
@@ -32,6 +34,11 @@ p {
 
 strong {
     font-weight: 600;
+}
+
+/* nav */
+nav {
+    background-color: $color-dark;
 }
 
 /* header */
@@ -118,10 +125,77 @@ section {
     }
 }
 
+/* events */
+#events {
+    .speaker-links {
+        a {
+            margin-right: 20px;
+            color: $color-1;
+        }
+    }
+
+    .speaker-img {
+        h5 {
+            margin-top: 15px;
+        }
+
+        h5,
+        h6 {
+            text-align: center;
+        }
+    }
+
+    .img-box {
+        position: relative;
+        width: 100%;
+        max-width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+
+        &::before {
+            content: "";
+            display: block;
+            padding-top: 100%;
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 2px 2px 15px 7px rgba(0, 0, 0, .05);
+
+            &::before {
+                content: "";
+                display: block;
+                padding-top: 100%;
+            }
+        }
+    }
+}
+
+/*Contact Form*/
+#contact-form {
+
+    input,
+    textarea {
+        width: 100%;
+    }
+
+    .alert {
+        display: none;
+    }
+}
+
 /* footer */
 footer {
     padding: 60px 0;
-    background-color: #222;
+    background-color: $color-dark;
     color: white;
 
     a {
