@@ -120,6 +120,13 @@ section {
 
 /* events */
 #events {
+    .speaker-links {
+        a {
+            margin-right: 20px;
+            color: $color-1;
+        }
+    }
+
     .speaker-img {
         h5 {
             margin-top: 15px;
@@ -167,9 +174,12 @@ section {
 
 /*Contact Form*/
 #contact-form {
-    input, textarea {
+
+    input,
+    textarea {
         width: 100%;
     }
+
     .alert {
         display: none;
     }
