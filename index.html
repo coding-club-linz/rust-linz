@@ -24,29 +24,31 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand" href="#">
-            <img src="img/rust-linz-logo.svg" alt="Rust Linz" width="23" height="23">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+    <nav class="navbar my-nav navbar-dark navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/rust-linz-logo-white.svg" alt="Rust Linz" width="40" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto >
+                    <li class=" nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#intro">Intro</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#events">Events</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#participation">Participation</a>
-                </li>
-            </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#intro">Intro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#events">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#participation">Participation</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     <header>
@@ -90,8 +92,107 @@
             <div class="row">
                 <div class="col-sm">
                     <h2>Events</h2>
-                    <p>6.8. Speaker Ryan Levick https://www.youtube.com/channel/UCpeX4D-ArTrsqvhLapAHprQ 17.9. Roland Ruckerbauer? https://github.com/ruabmbua
-                        Meaghan Lewis? https://github.com/meaghanlewis 8.10.</p>
+                    <h3>Thursday, August 6, 2020 17:30 MESZ - Kick Off</h3>
+                    <p>In the last years, Rust has become a popular programming language. Many use it, even more people are eager to learn it. Linz has meetups
+                        for many programming languages, but Rust has been missing - and that is about to change. On August 6th, 2020, we will kick-off the
+                        regular Rust Meetup in Linz. Because of current times, the meetup will be VIRTUAL.</p>
+                    <p>We are proud to welcome a very special guest for our first-ever Rust meetup: RYAN LEVICK. Ryan is Cloud Advocate for Microsoft. He has
+                        been writing Rust since around version 0.10. Ryan now focuses on Rust full time at Microsoft. When he's not doing Rust, he enjoys
+                        cooking, traveling, and exploring Berlin where he lives.</p>
+                    <p>Our second speaker of the evening is RAINER STROPEK. Rainer is chairman of the Coding Club Linz and co-founder of the Rust meetup in
+                        Linz. Rainer has been exploring Rust for some months and would like to share his learnings about Cargo, Rust's package management and
+                        build tool.</p>
+                    <h4>Schedule</h4>
+                    <table class="table">
+                        <tr>
+                            <td>
+                                <h5>17:30</h5>
+                            </td>
+                            <td>
+                                <h5>Welcome and Introduction</h5>
+                                <p>We will start the evening with a short introduction to the Rust Linz meetup.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5>17:45</h5>
+                            </td>
+                            <td>
+                                <div class="row">
+                                    <div class="col-8 session">
+                                        <h5>Why should I care about Rust?</h5>
+                                        <p>It seems like most developers these days have heard about Rust, but many are still wondering if the language is
+                                            relevant to them. In this talk, we'll explore why learning Rust might be of interest to you.</p>
+                                        <h6>About Ryan Levick</h6>
+                                        <p>Ryan has been writing Rust since around version 0.10. He now focuses on Rust full time at Microsoft. When he's not
+                                            doing Rust, he enjoys cooking, traveling and exploring Berlin where he lives.</p>
+                                        <p class="speaker-links">
+                                            <a href="https://blog.ryanlevick.com" target="_blank"><i class="fas fa-blog icon" aria-hidden="true"></i></a>
+                                            <a href="https://twitter.com/ryan_levick" target="_blank"><i class="fab fa-twitter icon" aria-hidden="true"></i></a>
+                                        </p>
+                                    </div>
+                                    <div class="col-4 speaker-img">
+                                        <div class="img-box">
+                                            <img
+                                                src="https://sessionize.com/image?f=13bdb1a4add8bd644389407a619f5889,400,400,1,0,23-3025-4795-b087-02a62140f5b5.a8500eee-2e97-4153-84a3-a4e9c64a4521.jpg" />
+                                        </div>
+                                        <h5>Ryan Levick</h5>
+                                        <h6>Cloud Advocate for Microsoft</h6>
+                                    </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5>17:30</h5>
+                            </td>
+                            <td>
+                                <div class="row">
+                                    <div class="col-8 session">
+                                        <h5>Cargo - Introduction in Rust's Package Manager</h5>
+                                        <p>C# has NuGet, Java has Maven, JavaScript has npm - and Rust has Cargo. Cargo is a package manager and build-tool. In
+                                            this session, Rainer Stropek will introduce Cargo and demonstrate how to use it when building Rust applications.
+                                            This will be an introductory talk for people who are rather new to Rust.</p>
+                                        <h6>About Rainer Stropek</h6>
+                                        <p> Rainer Stropek is co-founder and CEO of the company software architects and has been serving this role since 2008.
+                                            At software architects Rainer and his team are developing the award-winning SaaS time tracking solution “time
+                                            cockpit”. Previously, Rainer founded and led two IT consulting firms that worked in the area of developing software
+                                            solution based on the Microsoft technology stack.</p>
+                                        <p> Rainer is recognized as an expert concerning .NET development, software architecture and databases. He has written
+                                            numerous books and articles on C#, database development, Microsoft Azure, XAML, and web development. Additionally he
+                                            regularly speaks at conferences, workshops and trainings in Europe and the US. In 2010 Rainer has become one of the
+                                            first MVPs for the Microsoft Windows Azure platform. In 2015, Rainer also became a Microsoft Regional Director.
+                                            2016, Rainer also got the MVP award for Visual Studio and Developer Technologies.</p>
+                                        <p>Rainer graduated the Higher Technical School Leonding (AT) for MIS with honors and holds a BSc (Hons) Computer
+                                            Studies of the University of Derby (UK).</p>
+                                        <p class="speaker-links">
+                                            <a href="https://timecockpit.com" target="_blank"><i class="fas fa-building icon" aria-hidden="true"></i></a>
+                                            <a href="https://www.software-architects.com" target="_blank"><i class="fas fa-blog icon"
+                                                    aria-hidden="true"></i></a>
+                                            <a href="https://twitter.com/rstropek" target="_blank"><i class="fab fa-twitter icon" aria-hidden="true"></i></a>
+                                            <a href="https://www.linkedin.com/in/rainerstropek/" target="_blank"><i class="fab fa-linkedin-in icon"
+                                                    aria-hidden="true"></i></a>
+                                    </div>
+                                    <div class="col-4 speaker-img">
+                                        <div class="img-box">
+                                            <img
+                                                src="https://sessionize.com/image?f=7a974cba48bced882477c3f9766430b9,400,400,1,0,5f624d70-16ff-4000-ac65-7789834a1189.jpg" />
+                                        </div>
+                                        <h5>Rainer Stropek</h5>
+                                        <h6>software architects</h6>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3>Next Events</h3>
+                    <ul>
+                        <li>Thursday, September 17, 2020 17:30 MESZ</li>
+                        <li>Thursday, October 8, 2020 17:30 MESZ</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -108,6 +209,33 @@
                         dive content. Introductory sessions are great, too, so that beginners, students, and hobbyists have the opportunity to start their
                         *Rust* journey. <strong>You do not need to be a Rust pro to talk at our meetup!</strong> If you have something Rust-related to share
                         that you are passionate about, we would love to have you as a speaker.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <h2>Contact</h2>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="email" placeholder="E-Mail" name="email" id="contact-email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Message" rows="5" name="message" id="contact-text" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary" onclick="sendContactForm(); return false;">Send</button>
+                        </div>
+                        <div id="contact-success" class="alert alert-success">
+                            <p>The message was successfully send. We will contact you as soon as possible.</p>
+                        </div>
+                        <div id="contact-error" class="alert alert-danger">
+                            <p>The message could not be send. Please try again later or send a mail to <a
+                                    href="mailto:info@rust-linz.at">info@linz.coderdojo.net</a></p>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
