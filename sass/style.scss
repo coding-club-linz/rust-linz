@@ -64,6 +64,12 @@ a {
         border-color: $font-color;
         color: $font-color;
     }
+
+    &:not(:disabled):not(.disabled):active, &:focus {
+        background-color: darken($color-5, 10%);
+        border-color: $font-color;
+        color: $font-color;
+    }
 }
 
 strong {
@@ -74,6 +80,14 @@ strong {
     font-weight: 700;
     font-size: 1.5rem;
     letter-spacing: 0.05em;
+}
+
+.alert-success {
+    background-color: lighten($color: $color-6, $amount: 25%);
+}
+
+.alert-danger {
+    background-color: lighten($color: $color-3, $amount: 25%);
 }
 
 /* nav */
@@ -190,6 +204,12 @@ section {
                 border-color: #fff;
                 color: #fff;
             }
+
+            &:not(:disabled):not(.disabled):active, &:focus {
+                background-color: darken($color-2, 10%);
+                border-color: #fff;
+                color: #fff;
+            }
         }
 
         a {
@@ -215,6 +235,12 @@ section {
             border-color: $color-6;
 
             &:hover {
+                border-color: #fff;
+                color: #fff;
+            }
+
+            &:not(:disabled):not(.disabled):active, &:focus {
+                background-color: darken($color-6, 10%);
                 border-color: #fff;
                 color: #fff;
             }
@@ -285,14 +311,14 @@ section {
 }
 
 /*Contact Form*/
-#contact-form {
+#contact {
 
     input,
     textarea {
         width: 100%;
     }
 
-    .alert {
+    #contact-success, #contact-error {
         display: none;
     }
 }
