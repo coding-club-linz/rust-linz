@@ -3,12 +3,13 @@ body {
   padding-top: 60px;
   font-family: "Fira Sans", Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
-  line-height: 1.6; }
+  line-height: 1.6;
+  color: #000; }
 
 h2 {
-  margin-block-end: 1.5rem; }
+  margin-block-end: 2rem; }
 
-h3 {
+h3, h4 {
   margin-block-end: 1.5rem; }
 
 p {
@@ -17,28 +18,76 @@ p {
     font-weight: 400;
     font-size: 1.1em; }
 
+input, textarea {
+  padding: .375rem .75rem; }
+
+a {
+  color: #4a8fc2; }
+  a:hover {
+    color: #3775a2; }
+
+.btn {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #f5b12a;
+  border-color: #f5b12a;
+  color: #000;
+  min-width: 100px;
+  text-decoration: none !important; }
+  .btn i {
+    margin-right: 10px; }
+  .btn:hover {
+    background-color: #f5b12a;
+    border-color: #000;
+    color: #000; }
+
 strong {
   font-weight: 600; }
 
+.highlight-text {
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 0.05em; }
+
 /* nav */
 nav {
-  background-color: #222; }
+  background-color: #222;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em; }
 
 /* header */
 header {
   padding: 40px 0; }
   header .page-title {
-    font-family: "Alfa Slab One", serif;
     display: flex; }
     header .page-title > div {
       margin: auto; }
   header .title-img {
-    width: 100%; }
-  header .page-title-text {
+    width: 100%;
+    max-width: 250px; }
+  header h1 {
+    font-family: "Alfa Slab One", serif;
     font-size: 3.5rem; }
+    @media screen and (max-width: 991px) {
+      header h1 {
+        font-size: 2.5rem; } }
+    @media screen and (max-width: 767px) {
+      header h1 {
+        font-size: 2rem; } }
     @media screen and (max-width: 576px) {
-      header .page-title-text {
-        font-size: 2.7rem; } }
+      header h1 {
+        font-size: 2rem; } }
+  header h2 {
+    font-size: 2rem; }
+    @media screen and (max-width: 991px) {
+      header h2 {
+        font-size: 1.7rem; } }
+    @media screen and (max-width: 767px) {
+      header h2 {
+        font-size: 1.4rem; } }
+    @media screen and (max-width: 576px) {
+      header h2 {
+        font-size: 1.7rem; } }
   header .title-img-container {
     display: flex; }
     header .title-img-container > div {
@@ -73,16 +122,37 @@ section {
     color: white; }
     section.highlight-1 h2::before {
       background-color: #963982; }
+    section.highlight-1 .btn {
+      background-color: #963982;
+      border-color: #963982; }
+      section.highlight-1 .btn:hover {
+        border-color: #fff;
+        color: #fff; }
+    section.highlight-1 a {
+      text-decoration: underline;
+      color: white; }
+      section.highlight-1 a:hover {
+        color: #963982; }
   section.highlight-2 {
     background-color: #712b62;
     color: white; }
     section.highlight-2 h2::before {
       background-color: #65ae3d; }
+    section.highlight-2 .btn {
+      background-color: #65ae3d;
+      border-color: #65ae3d; }
+      section.highlight-2 .btn:hover {
+        border-color: #fff;
+        color: #fff; }
+    section.highlight-2 a {
+      text-decoration: underline;
+      color: white; }
+      section.highlight-2 a:hover {
+        color: #65ae3d; }
 
 /* events */
 #events .speaker-links a {
-  margin-right: 20px;
-  color: #4a8fc2; }
+  margin-right: 20px; }
 
 #events .speaker-img h5 {
   margin-top: 15px; }
@@ -133,6 +203,8 @@ footer {
   footer a {
     color: white;
     text-decoration: underline; }
+    footer a:hover {
+      color: #f5b12a; }
   footer .icon {
     padding: 0 10px;
-    font-size: 40px; }
+    font-size: 36px; }
