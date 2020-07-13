@@ -40,6 +40,10 @@ a {
     background-color: #f5b12a;
     border-color: #000;
     color: #000; }
+  .btn:not(:disabled):not(.disabled):active, .btn:focus {
+    background-color: #e1990b;
+    border-color: #000;
+    color: #000; }
 
 strong {
   font-weight: 600; }
@@ -48,6 +52,12 @@ strong {
   font-weight: 700;
   font-size: 1.5rem;
   letter-spacing: 0.05em; }
+
+.alert-success {
+  background-color: #abd992; }
+
+.alert-danger {
+  background-color: #f0a9a6; }
 
 /* nav */
 nav {
@@ -128,6 +138,10 @@ section {
       section.highlight-1 .btn:hover {
         border-color: #fff;
         color: #fff; }
+      section.highlight-1 .btn:not(:disabled):not(.disabled):active, section.highlight-1 .btn:focus {
+        background-color: #712b62;
+        border-color: #fff;
+        color: #fff; }
     section.highlight-1 a {
       text-decoration: underline;
       color: white; }
@@ -142,6 +156,10 @@ section {
       background-color: #65ae3d;
       border-color: #65ae3d; }
       section.highlight-2 .btn:hover {
+        border-color: #fff;
+        color: #fff; }
+      section.highlight-2 .btn:not(:disabled):not(.disabled):active, section.highlight-2 .btn:focus {
+        background-color: #4f8830;
         border-color: #fff;
         color: #fff; }
     section.highlight-2 a {
@@ -188,11 +206,11 @@ section {
       padding-top: 100%; }
 
 /*Contact Form*/
-#contact-form input,
-#contact-form textarea {
+#contact input,
+#contact textarea {
   width: 100%; }
 
-#contact-form .alert {
+#contact #contact-success, #contact #contact-error {
   display: none; }
 
 /* footer */
