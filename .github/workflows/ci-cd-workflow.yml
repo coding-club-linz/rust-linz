@@ -31,7 +31,7 @@ jobs:
           cp -R img/ dist/
           cp -R favicon/ dist/
           cp -R css/ dist/
-          cp -R js/ js/
+          cp -R js/ dist/
       - name: Deploy to gh-pages
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
