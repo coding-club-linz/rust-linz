@@ -3,3 +3,4 @@
 /package-lock.json
 /css/
 /dist/
+.DS_Store
