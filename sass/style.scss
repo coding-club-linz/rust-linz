@@ -188,6 +188,10 @@ section {
         z-index: -1;
     }
 
+    &.alt {
+        background-color: #e3e3e3;
+    }
+
     &.highlight-1 {
         background-color: darken($color: $color-1, $amount: 10%);
         color: white;
