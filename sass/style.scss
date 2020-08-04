@@ -190,6 +190,10 @@ section {
 
     &.alt {
         background-color: #e3e3e3;
+
+        table td {
+            border-top-color: #bfbfbf !important;
+        }
     }
 
     &.highlight-1 {
