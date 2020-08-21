@@ -90,6 +90,14 @@ strong {
     background-color: lighten($color: $color-3, $amount: 25%);
 }
 
+.table.table-bottom-line {
+    tr:last-of-type {
+        td {
+            border-bottom: 1px solid #dee2e6;
+        }
+    }
+}
+
 /* nav */
 nav {
     background-color: $color-dark;
@@ -266,7 +274,7 @@ section {
 }
 
 /* events */
-#events {
+#events, #videos {
     .speaker-links {
         a {
             margin-right: 20px;
