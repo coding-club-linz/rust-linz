@@ -59,6 +59,9 @@ strong {
 .alert-danger {
   background-color: #f0a9a6; }
 
+.table.table-bottom-line tr:last-of-type td {
+  border-bottom: 1px solid #dee2e6; }
+
 /* nav */
 nav {
   background-color: #222;
@@ -173,27 +176,28 @@ section {
         color: #65ae3d; }
 
 /* events */
-#events .speaker-links a {
+#events .speaker-links a, #videos .speaker-links a {
   margin-right: 20px; }
 
-#events .speaker-img h5 {
+#events .speaker-img h5, #videos .speaker-img h5 {
   margin-top: 15px; }
 
 #events .speaker-img h5,
-#events .speaker-img h6 {
+#events .speaker-img h6, #videos .speaker-img h5,
+#videos .speaker-img h6 {
   text-align: center; }
 
-#events .img-box {
+#events .img-box, #videos .img-box {
   position: relative;
   width: 100%;
   max-width: 200px;
   margin-left: auto;
   margin-right: auto; }
-  #events .img-box::before {
+  #events .img-box::before, #videos .img-box::before {
     content: "";
     display: block;
     padding-top: 100%; }
-  #events .img-box img {
+  #events .img-box img, #videos .img-box img {
     position: absolute;
     top: 0;
     left: 0;
@@ -204,7 +208,7 @@ section {
     object-fit: cover;
     border-radius: 50%;
     box-shadow: 2px 2px 15px 7px rgba(0, 0, 0, 0.05); }
-    #events .img-box img::before {
+    #events .img-box img::before, #videos .img-box img::before {
       content: "";
       display: block;
       padding-top: 100%; }
