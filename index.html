@@ -158,13 +158,12 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h3>Thursday, August 26, 2021 17:30 CEST</h3>
-                    <p>We hope you are all enjoying Summer 🌞 and you had or still have great holidays 😎🌅. This
-                        month's meetup will be a bit shorter because many of our organizers and speakers are on
-                        vacation. Nevertheless, we hope you find the topic we selected interesting and you join us for
-                        an hour of Rust 🦀.</p>
-                    <p>This month, Rainer will dive into Rust iterators. The talk is Rust beginner-friendly, so don't
-                        hesitate to join us even if you have no or limited Rust experience.
+                    <h3>Thursday, September 30, 2021 17:30 CEST</h3>
+                    <p>Welcome to the 14th edition of the RUST MEETUP LINZ! We are looking forward to an interesting
+                        evening with two amazing guest speakers. First up is YOSHUA WUYTS. Yosh is Rust Developer
+                        Advocate at Microsoft. He will share his thoughts on Futures and Concurrency with us. Our second
+                        speaker of the evening is FILIP KIERES. Filip works at the Developer Experience team at
+                        Dynatrace. His talk will be about gRPC, Rust, and Bazel.
                     </p>
                     <p class="text-center">
                         <!-- <a class="btn" href="https://ti.to/rust-linz/rust-linz-meetup-12-anniversary" target="_blank"><i
@@ -178,8 +177,8 @@
                     <h4>Join Us</h4>
                     <p>
                         <!-- <b>Youtube</b>: will be announced soon<br /> -->
-                        <b>Youtube</b>: <a href="https://youtu.be/a2k8AEhHv8c"
-                            target="_blank">https://youtu.be/a2k8AEhHv8c</a><br />
+                        <b>Youtube</b>: <a href="https://youtu.be/RwWwvEBkxjQ"
+                            target="_blank">https://youtu.be/RwWwvEBkxjQ</a><br />
                         <b>Chat on Discord</b>: <a href="https://discord.gg/T27Ms2f"
                             target="_blank">https://discord.gg/T27Ms2f</a>
                     </p>
@@ -202,30 +201,26 @@
                             <td>
                                 <div class="row">
                                     <div class="col-12 col-md-8 session">
-                                        <h5>Rust Iterators</h5>
-                                        <p>This year, important things have been improved in Rust regarding iterators
-                                            and arrays. Finally, we can iterate over arrays by value using a "for"-loop.
-                                            It is kind of strange that this seemingly simple language feature took so
-                                            long to arrive, isn't it?</p>
+                                        <h5>Futures Concurrency</h5>
+                                        <p>One of the capabilities async Rust enables is the ability to easily execute
+                                            code concurrently. We have solutions for this in the ecosystem, but none yet
+                                            provided by the stdlib. That’s because there is still a lot of design work
+                                            left to be done.</p>
 
-                                        <p>In his talk about iterators, Rainer quickly demonstrates the new iterator
-                                            features that came with Rust 1.53. Then he tries to shed some light on what
-                                            problems the Rust team had to solve to deliver this important language
-                                            enhancement.</p>
+                                        <p>In this talk Yosh will cover a basic model for concurrent execution of
+                                            futures. Then walk you through the design space of this feature, showing
+                                            various ways in which it can be implemented. And finally showcase a novel
+                                            futures concurrency library which ergonomically implements concurrent
+                                            futures execution in Rust.</p>
 
-                                        <p>For beginners, Rainer will also recap what iterators are and how they work
-                                            behind the scenes in Rust. So if you are new or you have limited Rust
-                                            experience, don't hesitate to join.</p>
                                         <p class="speaker-links">
-                                            <a href="https://timecockpit.com" title="Company website" target="_blank"><i
-                                                    class="fas fa-building icon" aria-hidden="true"></i></a>
-                                            <a href="https://www.software-architects.com" title="Blog"
-                                                target="_blank"><i class="fas fa-blog icon" aria-hidden="true"></i></a>
-                                            <a href="https://twitter.com/rstropek" title="Twitter" target="_blank"><i
+                                            <a href="https://developer.microsoft.com/" title="Company website"
+                                                target="_blank">
+                                                <i class="fas fa-building icon" aria-hidden="true"></i></a>
+                                            <a href="https://twitter.com/yoshuawuyts" title="Twitter" target="_blank"><i
                                                     class="fab fa-twitter icon" aria-hidden="true"></i></a>
-                                            <a href="https://www.linkedin.com/in/rainerstropek/" title="LinkedIn"
-                                                target="_blank"><i class="fab fa-linkedin-in icon"
-                                                    aria-hidden="true"></i></a>
+                                            <a href="https://blog.yoshuawuyts.com/" title="Blog" target="_blank"><i
+                                                    class="fas fa-blog icon" aria-hidden="true"></i></a>
                                         </p>
                                         <!-- <p class="speaker-links">
                                             <a href="..." title=" Company website"
@@ -245,10 +240,50 @@
                                     <div class="col-12 col-md-4 speaker-img">
                                         <div class="img-box">
                                             <img
-                                                src="https://sessionize.com/image?f=7a974cba48bced882477c3f9766430b9,400,400,1,0,5f624d70-16ff-4000-ac65-7789834a1189.jpg" />
+                                                src="https://sessionize.com/image/a13c-200o200o2-3BQRLnD4Q5Gx5uEriqUDLq.jpg" />
                                         </div>
-                                        <h5>Rainer Stropek</h5>
-                                        <h6>software architects</h6>
+                                        <h5>Yoshua Wuyts</h5>
+                                        <h6>Rust Developer Advocate @Microsoft</h6>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5>18:45</h5>
+                            </td>
+                            <td>
+                                <div class="row">
+                                    <div class="col-12 col-md-8 session">
+                                        <h5>Send Your Microservices to the Autobahn with gRPC and Rust</h5>
+                                        <p>Want to speed up your microservices? Want to make e-money? Well, we’ve got
+                                            you covered, at least for the former. Learn to build simple, secure, and
+                                            well-factored gRPC microservices in Rust with Bazel. From the introduction
+                                            to migration strategies for your microservice architectures. Join us for
+                                            this production-ready talk, the TOUCHDOWN of this year!</p>
+
+                                        <!-- <p class="speaker-links">
+                                            <a href="..." title=" Company website"
+                                                target="_blank"><i class="fas fa-building icon"
+                                                    aria-hidden="true"></i></a>
+                                            <a href="mailto:..." title="Email"
+                                                target="_blank"><i class="fas fa-envelope icon"
+                                                    aria-hidden="true"></i></a>
+                                            <a href="..." title="Blog" target="_blank"><i
+                                                    class="fas fa-blog icon" aria-hidden="true"></i></a>
+                                            <a href="https://twitter.com/..." title="Twitter" target="_blank"><i
+                                                    class="fab fa-twitter icon" aria-hidden="true"></i></a>
+                                            <a href="https://github.com/..." title="GitHub" target="_blank"><i
+                                                    class="fab fa-github icon" aria-hidden="true"></i></a>
+                                        </p> -->
+                                    </div>
+                                    <div class="col-12 col-md-4 speaker-img">
+                                        <div class="img-box">
+                                            <img
+                                                src="https://sessionize.com/image/ba18-200o200o2-JgbHhjCoH83hMyNCVVMDkJ.jpg" />
+                                        </div>
+                                        <h5>Filip Kieres</h5>
+                                        <h6>Software Engineer Dynatrace</h6>
                                     </div>
                                 </div>
                             </td>
@@ -291,17 +326,27 @@
                     <p class="lead">You can watch all previous talks on YouTube.</p>
                     <table class="table table-bottom-line">
                         <tr>
+                            <td>August 26, 2021</td>
+                            <td>Rust Iterators</td>
+                            <td>Rainer Stropek</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=R0ufQe5DRaw&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+                        <tr>
                             <td>July 29, 2021</td>
                             <td>Traits - Not Your Grandparents' Interfaces</td>
                             <td>Rainer Stropek</td>
-                            <td><a class="btn" href="https://www.youtube.com/watch?v=5ltL2EsBmf8&t=5325s"
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=B0fL3WmJZsc&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u"
                                     target="_blank">Watch on YouTube</a></td>
                         </tr>
                         <tr>
                             <td>July 29, 2021</td>
                             <td>Serverless Rust</td>
                             <td>Stefan Baumgartner</td>
-                            <td><a class="btn" href="https://www.youtube.com/watch?v=5ltL2EsBmf8&t=356s"
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=EXqqsCss8Gk&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u"
                                     target="_blank">Watch on YouTube</a></td>
                         </tr>
 
